@@ -639,7 +639,6 @@
     "Favor to Donate": "捐赠所需 Favor",
     "Passive Rep": "被动声望",
     "Crime Exp": "犯罪经验",
-    "Crime Money": "犯罪收益",
     "Crime Success Rate": "犯罪成功率",
     "Darknet Money": "暗网资金",
     "Hacking Level": "黑客等级",

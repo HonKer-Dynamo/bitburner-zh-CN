@@ -36,7 +36,6 @@
     "Healthcare": "医疗",
     "Real Estate": "房地产",
     // ---- 1.1 Enums.ts：员工职位（CorpEmployeeJob；Management/Unassigned 已在 pages3）----
-    "Operations": "运营",
     "Engineer": "工程师",
     "Business": "商务",
     "Research & Development": "研发",
@@ -54,7 +53,7 @@
     "Robots": "机器人",
     "AI Cores": "AI 核心",
     // ---- 1.1 Enums.ts：解锁名（CorpUnlockName；Export 已在 dict-core）----
-    "Smart Supply": "智能补给",
+    "Smart Supply": "智能调拨",
     "Market Research - Demand": "市场调研 - 需求",
     "Market Data - Competition": "市场数据 - 竞争",
     "Shady Accounting": "灰色会计",
@@ -387,7 +386,6 @@
     " currently has ": " 目前有 ",
     " outstanding stock shares, valued at ": " 股在外流通股份，现价为 ",
     "'s stock price will settle at ": " 的股价将稳定在 ",
-    " per share.": " 每股。",
     "'s stock price.": " 的股价。",
     "Note that issuing dividends will negatively affect ": "注意：发放股息会对",
     " Assume your corporation makes ": " 假设你的企业赚取 ",
@@ -442,7 +440,7 @@
     "Bulk Purchase amount": "批量购买数量",
     "Confirm Bulk Purchase": "确认批量购买",
     "you would like to purchase per second. This material's cost changes constantly.": "每秒购买的数量。该材料的成本时刻变化。",
-    "Note: Purchase amount is disabled as smart supply is enabled": "注意：由于已启用智能补给，购买数量已被禁用",
+    "Note: Purchase amount is disabled as smart supply is enabled": "注意：由于已启用智能调拨，购买数量已被禁用",
     "Purchase amount": "购买数量",
     "Clear Purchase": "清除购买量",
     // Limit production modals
@@ -494,13 +492,13 @@
     "City:": "城市：",
     "Amount/s:": "数量/秒：",
     // SmartSupplyModal
-    "Smart Supply purchases the exact amount of materials needed for maximal production.": "智能补给会恰好购买最大生产所需的材料数量。",
-    "Enable Smart Supply": "启用智能补给",
+    "Smart Supply purchases the exact amount of materials needed for maximal production.": "智能调拨会恰好购买最大生产所需的材料数量。",
+    "Enable Smart Supply": "启用智能调拨",
     "Options:": "选项：",
     "Use leftovers takes the amount of that material already in storage into account when purchasing new ones. This also accounts for imports, since they are \"leftovers\" by the time purchasing happens.": "“使用剩余库存”在采购时会计入仓库中已有的该材料数量，也会计入进口量——因为采购时它们已是“剩余库存”。",
     "This is usually the option you want.": "通常你该选这个选项。",
     " the amount of that materials that were imported in the previous cycle into account. This is useful when dealing with specialty situations, like importing materials that also boost production.": "计入上一周期进口的那部分材料数量。这适用于特殊情形，例如进口那些同时能提升生产的材料。",
-    "If neither is toggled on, Smart Supply will ignore any materials stored and attempts to buy as much as is needed for production.": "若两者都未开启，智能补给将忽略库存材料，直接购入生产所需的全部数量。",
+    "If neither is toggled on, Smart Supply will ignore any materials stored and attempts to buy as much as is needed for production.": "若两者都未开启，智能调拨将忽略库存材料，直接购入生产所需的全部数量。",
     "Use leftovers": "使用剩余库存",
     "Use imported": "使用进口",
     // ThrowPartyModal
@@ -573,7 +571,6 @@
     "Total Employee Salary:": "员工薪资总额：",
     "Material Production:": "材料产量：",
     "Product Production:": "产品产量：",
-    "Sales Multiplier:": "销售倍率：",
     "Employee Production:": "员工生产力：",
     "Boosting Materials:": "加成材料：",
     "Research:": "研究：",
@@ -606,7 +603,7 @@
     "Upgrade Warehouse Size -": "升级仓库容量 -",
     "This industry uses the following equation for its production:": "该行业使用以下生产公式：",
     "To get started with production, purchase your required materials or import them from another of your company's divisions.": "要开始生产，请购买所需材料，或从公司其他部门进口。",
-    "Configure Smart Supply": "配置智能补给",
+    "Configure Smart Supply": "配置智能调拨",
     "Purchase Warehouse (": "购买仓库（",
     // MaterialElem
     "Limit Material Production": "限制材料产量",
@@ -638,7 +635,6 @@
     "An estimate of how much consumers are willing to pay for this product. Setting the sale price above this may result in less sales. Setting the sale price below this may result in more sales.": "对消费者愿为该商品支付金额的估计。售价定得高于它可能减少销量，定得低于它可能增加销量。",
     "Est. Market Price:": "预估市价：",
     // DivisionOverview
-    "Industry:": "行业：",
     "Awareness:": "知名度：",
     "Popularity:": "受欢迎度：",
     "Multiplier for this industry's sales due to its awareness and popularity.": "因知名度与受欢迎度而对该行业销售的倍率。",
@@ -680,7 +676,6 @@
     "NO": "否",
     "NONE": "无",
     // Overview.tsx 里 UpgradeOfficeSizeModal / ResearchModal 其余
-    "Employee Charisma Multiplier:": "员工魅力倍率：",
   });
   BitburnerZH.frag({
     " employees": " 名员工",
@@ -712,17 +707,17 @@
     [/^Error evaluating your sell price for (.+) in (.+)'s (.+) office\. The sell amount is being set to zero\. Error: (.+)$/, "在 $3 的“$2”办公室设置 $1 售价时出错。售出数量已设为 0。错误：$4"],
     [/^Calculating export for (.+) in (.+)'s (.+) division failed with error: (.+)$/, "计算“$2”部门 $3 对 $1 的出口时失败，错误：$4"],
     // 企业状态栏（全大写 token，非锚定但均为大写，风险可控）
-    [/PRODUCTION/, "生产"],
-    [/PURCHASE/, "采购"],
-    [/EXPORT/, "出口"],
-    [/SALE/, "出售"],
-    [/START/, "开始"],
+    [/^PRODUCTION$/, "生产"],
+    [/^PURCHASE$/, "采购"],
+    [/^EXPORT$/, "出口"],
+    [/^SALE$/, "出售"],
+    [/^START$/, "开始"],
   ]);
 
   /* ==================== 2. Coding Contract（src/CodingContract + src/ui/React/CodingContractModal.tsx） ====================
    * v3.0.1 契约是 .cct 文件，终端 run 后弹窗；弹窗把 desc 按 \n 拆成行节点，
    * 描述行用 exact（整行）或 pattern（含数字插值行）。终端消息（Contract SUCCESS/FAILED 等）已由 dict-terminal.js 收录。
-   * 注意：dict-terminal 把 Coding Contract 译作“编程合同”，本字典按任务术语表用“编程契约”，请 Lead 统一。 */
+   * 注：Coding Contract 全字典按术语表统一用“编程契约”（dict-terminal 已一致）。 */
   BitburnerZH.exact({
     // ---- Enums.ts：30 种契约类型名（CodingContractName 显示值）----
     "Find Largest Prime Factor": "求最大质因数",
@@ -784,7 +779,6 @@
     "Given the following string containing only digits, return an array with all possible valid IP address combinations that can be created from the string:": "给定以下仅由数字组成的字符串，返回由它能创建的所有合法 IP 地址组合的数组：",
     "Note that an octet cannot begin with a '0' unless the number itself is exactly '0'. For example, '192.168.010.1' is not a valid IP.": "注意：除非该段恰好是 '0'，否则段首不能是 '0'。例如 '192.168.010.1' 不是合法 IP。",
     "Examples:": "示例：",
-    "Example:": "示例：",
   });
   BitburnerZH.patterns([
     // ---- CodingContractModal 剩余尝试次数（pluralize 节点；"次尝试机会…"由下一行节点提供）----
@@ -822,7 +816,6 @@
     "You are trying to find the shortest path to the bottom-right corner of the grid, but there are obstacles on the grid that you cannot move onto. These obstacles are denoted by '1', while empty spaces are denoted by 0.": "你想找到走到网格右下角的最短路径，但网格中存在无法进入的障碍，以“1”表示，空格以 0 表示。",
     "Determine the shortest path from start to finish, if one exists. The answer should be given as a string of UDLR characters, indicating the moves along the path": "若存在路径，求从起点到终点的最短路径。答案应为 UDLR 字符组成的字符串，表示沿途的移动方向",
     "NOTE: If there are multiple equally short paths, any of them is accepted as answer. If there is no path, the answer should be an empty string.": "注意：若存在多条等长最短路径，任意一条都算正确。若无路可走，答案应为空字符串。",
-    "Examples:": "示例：",
     // ---- Proper2ColoringOfAGraph 描述行 ----
     "You are given the following data, representing a graph:": "给定以下表示图的数据：",
     // ---- SanitizeParenthesesInExpression 描述行 ----

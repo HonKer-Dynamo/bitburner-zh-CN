@@ -186,7 +186,6 @@
     // ---- Stats 页：资金来源明细（MoneyModal，标签自带冒号）----
     "Total:": "总计：",
     "Augmentations:": "义体：",
-    "Bladeburner:": "刃行者：",
     "Casino:": "赌场：",
     "Coding Contracts:": "编程契约：",
     "Company Work:": "公司工作：",
@@ -245,8 +244,8 @@
     [/^Recent Errors \((\d+)\)$/, "最近的错误（$1）"],
     [/^(\d+)-(\d+) of (\d+)$/, "$1-$2 / 共 $3"],
     [/^Displaying scripts (\d+)-(\d+) of (\d+)$/, "显示脚本 $1-$2 / 共 $3"],
-    [/(.+) hacking exp \/ sec$/, "$1 黑客经验/秒"],
-    [/(.+) hacking exp$/, "$1 黑客经验"],
+    [/^(.+) hacking exp \/ sec$/, "$1 黑客经验/秒"],
+    [/^(.+) hacking exp$/, "$1 黑客经验"],
     [/^Cannot run (.+)\. It is not a script\.$/, "无法运行 $1，它不是脚本。"],
     [/^Do you want to save changes to (.+) on (.+)\?$/, "要保存对 $2 上的 $1 的更改吗？"],
     [/^Do you want to overwrite the current editor content with the contents of (.+) on the server\? This cannot be undone\.$/, "要用服务器上 $1 的内容覆盖当前编辑器内容吗？此操作无法撤销。"],

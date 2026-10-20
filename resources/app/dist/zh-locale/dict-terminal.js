@@ -249,7 +249,7 @@
     "5 and 10, respectively.": "5 和 10。",
     "The information 'scan-analyze' displays about each server includes whether or not you have root access to it,": "'scan-analyze' 显示的每台服务器信息包括你是否拥有其 root 权限、",
     "its required hacking level, the number of open ports required to run NUKE.exe on it, and how much RAM": "所需黑客等级、在其上运行 NUKE.exe 所需的开放端口数，以及它有多少",
-    "it has.": "RAM。",
+    "it has.": " 拥有量。",
     "By default, this command will not display servers that you have purchased. However, you can pass in the": "默认情况下，此命令不会显示你购买的服务器。不过你可以在命令末尾传入",
     "-a flag at the end of the command if you would like to enable that.": "-a 标志来启用显示它们。",
     /* scp */
@@ -410,7 +410,6 @@
     "For example, with \"/foo/bar.txt\", there is no actual \"/foo\" directory.": "例如，对于 \"/foo/bar.txt\"，实际上并没有 \"/foo\" 这个目录。",
     /* mv.ts */
     "Incorrect number of arguments. Usage: mv [src] [dest]": "参数数量错误。用法：mv [src] [dest]",
-    "'mv' can only be used on scripts (.js, .jsx, .ts, .tsx) and text files (.txt, .json, .css)": "'mv' 只能用于脚本 (.js, .jsx, .ts, .tsx) 和文本文件 (.txt, .json, .css)",
     /* ps.ts */
     "Incorrect usage of ps command. Usage: ps [-g, --grep pattern]": "ps 命令用法错误。用法：ps [-g, --grep pattern]",
     /* rm.ts */
@@ -450,7 +449,6 @@
     "Incorrect usage of wget command. Usage: wget [url] [target file]": "wget 命令用法错误。用法：wget [url] [target file]",
     "wget failed: Invalid target file. Target file must be a script file or a text file.": "wget 失败：目标文件无效。目标文件必须是脚本文件或文本文件。",
     /* common/editor.ts 与 deprecation.tsx */
-    "Running .script files is unsupported.": "运行 .script 文件已不再受支持。",
     "Here are instructions": "这里有迁移说明",
     "to migrate your scripts to .js files instead.": "可将你的脚本迁移为 .js 文件。",
     /* ui/TerminalInput.tsx */

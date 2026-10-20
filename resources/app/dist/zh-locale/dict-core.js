@@ -131,7 +131,7 @@
     "Class": "课程",
 
     /* ---------- 玩家属性与资源 ---------- */
-    "Hacking": "黑客",
+    "Hacking": "黑客入侵",
     "Charisma": "魅力",
     "Strength": "力量",
     "Defense": "防御",
@@ -245,7 +245,6 @@
     "Thread": "线程",
     "Hostname": "主机名",
     "IP Address": "IP 地址",
-    "Security": "安全等级",
     "Security Level": "安全等级",
     "Money Gain": "资金获取",
     "Hack Time": "破解时间",
@@ -258,7 +257,6 @@
     "Formulas": "公式",
     "Source File": "源文件",
     "Source Files": "源文件",
-    "BitNode": "BitNode",
     "BitNodes": "BitNode",
     "Augmentation": "义体",
     "Faction": "派系",
@@ -294,7 +292,6 @@
     "Divisions": "部门",
     "Office": "办公室",
     "Warehouse": "仓库",
-    "Employee": "员工",
     "Employees": "员工",
     "Manager": "经理",
     "Shares": "股份",

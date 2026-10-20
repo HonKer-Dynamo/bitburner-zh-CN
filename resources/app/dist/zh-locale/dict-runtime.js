@@ -53,7 +53,6 @@
     "API ACCESS ERROR": "API 访问权限错误",
     "CONCURRENCY ERROR": "并发错误",
     "RAM USAGE ERROR": "RAM 用量错误",
-    "Stack:": "调用栈：",
     /* ---- 1.3 src/Netscript/TypeAssertion.ts（参数类型断言） ---- */
     "Is null.": "该值为 null。",
     "Is undefined.": "该值为 undefined。",
@@ -319,11 +318,8 @@
     "Close window": "关闭窗口",
     /* ---- 5.2 src/ErrorHandling/ErrorModal.tsx（脚本崩溃弹窗） ---- */
     "Suppress error modals (5 min)": "屏蔽错误弹窗（5 分钟）",
-    "If this is set, no error modals will be shown for the next five minutes, and only log errors to the Recent Errors page.":
-      "启用后，接下来五分钟内不会显示错误弹窗，错误只会记录到最近错误页面。",
     "View Script Logs": "查看脚本日志",
     "Errors Page": "错误页面",
-    "Recent Errors": "最近错误",
     /* ---- 5.3 src/ErrorHandling/ErrorModal.tsx 弹窗标题：类型词与 " ERROR" 是两个文本节点 ---- */
     "RUNTIME": "运行时",
     "TYPE": "类型",

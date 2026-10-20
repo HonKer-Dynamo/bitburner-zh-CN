@@ -169,7 +169,6 @@
     "Effects:": "效果：",
     "Weapon": "武器",
     "Vehicle": "载具",
-    "Rootkit": "Rootkit",
     // ---- src/Gang/ui/EquipmentsSubpage.tsx：帮派装备名（义体类已在 dict-pages2.js 收录）----
     "Baseball Bat": "棒球棍",
     "Katana": "武士刀",
@@ -187,7 +186,6 @@
     "Yaiba ASM-R250 Muramasa": "刃铁 ASM-R250 村正",
     "Rayfield Caliburn": "雷菲尔德 卡利本",
     "Quadra Sport R-7": "昆达 Sport R-7",
-    "NUKE Rootkit": "NUKE Rootkit",
     "Soulstealer Rootkit": "夺魂 Rootkit",
     "Demon Rootkit": "恶魔 Rootkit",
     "Hmap Node": "Hmap 节点",
@@ -374,7 +372,6 @@
     "Est. Synthoid Population:": "预估仿生人数量：",
     "Synthoid Communities:": "仿生人社区：",
     "City Chaos:": "城市混乱：",
-    "Bonus time:": "额外时间：",
     "Skill Points:": "技能点：",
     "Aug. Success Chance mult:": "义体成功率倍率：",
     "Aug. Max Stamina mult:": "义体体力上限倍率：",

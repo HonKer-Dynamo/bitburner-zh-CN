@@ -104,7 +104,6 @@
     "Helios Labs": "赫利俄斯实验室",
     "LexoCorp": "莱克森公司",
     "Millenium Fitness Gym": "千禧健身馆",
-    "NWO": "NWO",
     "OmniTek Incorporated": "全技公司",
     "Omnia Cybersystems": "奥尼亚网络系统",
     "SysCore Securities": "系统核心证券",
@@ -147,7 +146,6 @@
     // ---- src/Locations/ui：赌场入口 ----
     "Play coin flip": "玩抛硬币",
     "Play slots": "玩老虎机",
-    "Play roulette": "玩轮盘赌",
     "Play blackjack (": "玩二十一点（",
     " decks)": " 副牌)",
     "Stop playing": "停止游戏",
@@ -160,8 +158,6 @@
     "augmentation and won't be able to accept Stanek's Gift. If you want to accept Stanek's Gift,": " 义体，并且将无法再接受斯塔内克的馈赠。如果你想接受斯塔内克的馈赠，",
     "you must do that before joining the Bladeburner division.": "必须在加入刃行者部门之前完成。",
     "Do you really want to join the Bladeburner division now?": "你现在真的想加入刃行者部门吗？",
-    "Eat noodles": "吃面",
-    "You ate some delicious noodles and feel refreshed": "你吃了美味的一碗面，精神为之一振",
     "A businessman is yelling at a clerk. You should come back later.": "一个商人在对店员大吼大叫。你稍后再来吧。",
     "Create a Corporation": "创建企业",
     "Enter the secret lab": "进入秘密实验室",
@@ -203,7 +199,6 @@
     "Data Structures": "数据结构",
     "Networks": "网络",
     "Algorithms": "算法",
-    "Management": "管理学",
     "Leadership": "领导力",
     // ---- 课程结束对话框（ClassWork.finish）----
     "You earned a total of:": "你总共获得了：",
@@ -247,7 +242,6 @@
     "Senior Business Consultant": "高级商务顾问",
     // ---- src/Company：职位领域（JobField 显示值）----
     "Software": "软件",
-    "IT": "IT",
     "Business": "商务",
     "Security": "安保",
     "Agent": "特工",
@@ -372,7 +366,6 @@
     // ---- src/Faction/FactionInfo：派系介绍与传闻（按 JSX 拆分后的节点）----
     "Humanity never changes. No matter how civilized society becomes, it will eventually fall back into chaos. And from this chaos, we are the invisible hand that guides them to order.": "人性从未改变。无论社会变得多么文明，终将重归混乱。而在这片混乱之中，我们就是引导他们重归秩序的那只无形之手。",
     "...the ancient secret society that controls the entire world from the shadows with their invisible hand. With their personal wealth and skills they have penetrated every major government, financial agency, and corporation...": "……那个古老的秘密结社，在幕后以无形之手操控整个世界。凭借他们的财富与技艺，他们已经渗透进每一个重要的政府、金融机构与企业……",
-    "Yesterday we obeyed kings and bent our necks to emperors. Today we kneel only to truth.": "昨日我们服从国王，向皇帝俯首。今日我们只向真理跪拜。",
     "Follow the thread. Take fl1ght.": "追随线索。展翅飞1升。",
     "Surrender yourself. Give up your empty individuality to become part of something great, something eternal. Become a slave. Submit your mind, body, and soul. Only then can you set yourself free.": "交出你自己。舍弃空虚的个性，成为某种伟大、某种永恒的一部分。成为奴隶。交付你的思想、肉体与灵魂。唯有如此，你才能获得自由。",
     "Only then can you discover immortality.": "唯有如此，你才能领悟不朽。",
@@ -552,7 +545,6 @@
     "- Money": "- 资金",
     "- Scripts on every computer but your home computer": "- 除 home 电脑外所有计算机上的脚本",
     "- Cloud servers": "- 云服务器",
-    "- Hacknet": "- Hacknet",
     "- Faction/Company reputation": "- 派系/公司声望",
     "- Stocks": "- 股票",
     "Installing Augmentations lets you start over with the perks and benefits granted by all of the Augmentations you have ever installed. Also, you will keep any scripts and RAM/Core upgrades on your home computer (but you will lose all programs besides NUKE.exe)": "安装义体让你在重新开始时保留所有已安装义体带来的加成与收益。此外，你会保留 home 电脑上的脚本与 RAM/核心升级（但除 NUKE.exe 外的所有程序都将丢失）",
@@ -707,7 +699,7 @@
     // 潜入行动
     "Infiltrating ": "正在潜入 ",
     "Level ": "关卡 ",
-    "You ": "",
+    "You ": "你",
     "have gained ": "已获得 ",
     " rep for ": " 声望，来自 ",
     " and": "，并且",
@@ -717,9 +709,7 @@
     "Sell for\u00A0": "出售获得\u00A0",
     "Lose ": "每次失败损失 ",
     " HP for each failure": " 生命",
-    "The ": "",
     // 特殊地点/帮派战役
-    "Buy ": "购买 ",
   });
 
   // ============ patterns（整节点为单个字符串；多行节点逐行匹配）============
@@ -872,7 +862,6 @@
     "violet Congruity Implant": "violet 谐调植入体",
     "Hydroflame Left Arm": "hydroflame 左臂",
     "BigD's Big ... Brain": "BigD 的超级……大脑",
-    "Z.O.Ë.": "Z.O.Ë.",
     "Eloquence Module": "雄辩模块",
     "Golden Tongue Module": "金舌模块",
     "Glibness Enhancement": "巧言强化",
@@ -888,7 +877,6 @@
     "GOLEM Serum": "GOLEM 血清",
     "Vangelis Virus": "范吉利斯病毒",
     "Vangelis Virus 3.0": "范吉利斯病毒 3.0",
-    "I.N.T.E.R.L.I.N.K.E.D": "I.N.T.E.R.L.I.N.K.E.D",
     "Blade's Runners": "刃行者之足",
     "BLADE-51b Tesla Armor": "BLADE-51b 特斯拉护甲",
     "BLADE-51b Tesla Armor: Power Cells Upgrade": "BLADE-51b 特斯拉护甲：电池升级",

@@ -45,7 +45,7 @@
  *   - dict-pages2.js：城市/地点/派系名、TOR 购买 GUI 句（"You already have a TOR Router!" 等大写变体）、FactionHelpers 购买义体失败句、
  *     "You have been accepted into the Bladeburner division!"（感叹号版；本文件收 NS 句号版）。
  *   - dict-pages3.js：Bladeburner 行动 startAction/upgradeSkill/joinFaction 的 attempt.message、住院句。
- *   - dict-pages5.js：买卖股票失败长句；pages4：Contract SUCCESS/FAILED 弹窗句与 "Contract SUCCESS - ..." 终端句（pages4 注记 terminal 译"编程合同"，本文件按术语表用"编程契约"）。
+ *   - dict-pages5.js：买卖股票失败长句；pages4：Contract SUCCESS/FAILED 弹窗句与 "Contract SUCCESS - ..." 终端句（terminal 与本文件均按术语表用"编程契约"）。
  *   - dict-core.js："Not enough money"、通用 "You do not have enough money to (X)."（句号结尾版）。
  * 术语（与既有字典一致）：hack=骇入、grow=生长、weaken=削弱、favor=好感、reputation=声望、Respect(帮派)=威望、faction=派系、
  *   augmentation=义体、sleeve=分身、gang=帮派、corporation=企业、threads=线程、root access=root 权限、Coding Contract=编程契约、
@@ -152,8 +152,8 @@
     "Must have joined gang": "必须已加入帮派",
     'Invalid memberName: "" (empty string)': '无效的 memberName：""（空字符串）',
     'Invalid newName: "" (empty string)': '无效的 newName：""（空字符串）',
-    "Engaging in Gang Territory Warfare": "已开始参与帮派领土战争",
-    "Disengaging in Gang Territory Warfare": "已停止参与帮派领土战争",
+    "Engaging in Gang Territory Warfare": "已开始参与帮派地盘战争",
+    "Disengaging in Gang Territory Warfare": "已停止参与帮派地盘战争",
     /* ---- 1.4 src/NetscriptFunctions/Corporation.ts ---- */
     "cannot be called without a corporation": "没有企业时无法调用",
     "Must own a corporation.": "必须拥有企业。",
@@ -390,12 +390,12 @@
     /* ---- 2.4 src/NetscriptFunctions/Corporation.ts ---- */
     [/^No research tree for industry '([^']+)'$/, "行业“$1”没有科研树"],
     [/^No research named '([^']+)'$/, "没有名为“$1”的科研项目"],
-    [/^No division named '(.+)'$/, "没有名为“$1”的分部"],
+    [/^No division named '(.+)'$/, "没有名为“$1”的部门"],
     [/^(.+?) has not expanded to '([^']+)'$/, "$1 尚未扩张到“$2”"],
     [/^(.+?) does not have a warehouse in '([^']+)'$/, "$1 在“$2”没有仓库"],
     [/^Invalid product name: '(.+)'$/, "无效的产品名：“$1”"],
-    [/^No division with provided name (.+)$/, "没有名为 $1 的分部"],
-    [/^You have not researched (MarketTA\.I|MarketTA\.II) for division: (.+)$/, "分部 $2 尚未科研 $1"],
+    [/^No division with provided name (.+)$/, "没有名为 $1 的部门"],
+    [/^You have not researched (MarketTA\.I|MarketTA\.II) for division: (.+)$/, "部门 $2 尚未科研 $1"],
     [/^Invalid value for amount! Must be an integer and greater than or be 0"\. Amount:'(.+)'$/,
       "amount 的值无效！必须是大于或等于 0 的整数。amount：'$1'"],
     [/^Unable to bring '(.+) employees to (\S+)\. Requires (\S+) unassigned employees$/,

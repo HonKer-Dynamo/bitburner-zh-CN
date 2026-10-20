@@ -108,9 +108,9 @@
     "This page contains a lot of different documentation about the game's contents and mechanics. I know it's a lot, but I highly suggest you read (or at least skim) through this before you start playing. Some pages are inaccessible at the start and will be unlocked later.": "此页包含大量关于游戏内容与机制的文档。我知道内容很多，但强烈建议你在正式游玩前通读（至少浏览）一遍。有些页面开局无法访问，稍后会解锁。",
     "If you click a link in these pages while holding Ctrl key (Control key on Mac keyboard), it will be opened in a new tab. If you play the Steam version, that link will be opened in your default browser.": "按住 Ctrl 键（Mac 键盘上是 Control 键）再点击这些页面里的链接，链接会在新标签页打开；如果你玩的是 Steam 版，则会在系统默认浏览器中打开。",
     "You should at least check these pages:": "你至少应该看看这些页面：",
-    "contains the guide for new players, navigating you through most of the early game.": "》，为新手提供向导，陪你走过前期的大部分流程。",
-    "contains reference materials for all NS APIs.": "》，是所有 NS API 的参考资料。",
-    "contains questions often asked by beginners of the game.": "》，收录了游戏新手常提的问题。",
+    "contains the guide for new players, navigating you through most of the early game.": "，为新手提供向导，陪你走过前期的大部分流程。",
+    "contains reference materials for all NS APIs.": "，是所有 NS API 的参考资料。",
+    "contains questions often asked by beginners of the game.": "，收录了游戏新手常提的问题。",
     "This documentation page is the best place to get up-to-date information, especially when you get stuck. If you have a question and cannot find the answer here, please ask us on Discord.": "文档页是获取最新信息的最佳去处，尤其是你卡关的时候。若有疑问而这里找不到答案，欢迎到 Discord 上问我们。",
     "The documentation at readthedocs is outdated and unmaintained. Do not use them!": "readthedocs 上的文档已过时且无人维护。别用它！",
     "That's the end of the tutorial. Hope you enjoy the game!": "教程到此结束，祝你玩得开心！",
@@ -121,8 +121,7 @@
 
   /* 教程中被插值拆开的短片段（原样匹配，含空格） */
   BitburnerZH.frag({
-    "The ": "《",
-    "When ": "当",
+    "When ": "当 ",
     "To access ": "要访问",
   });
 
@@ -157,15 +156,15 @@
     "You should check the in-game Corporation documentation in the Documentation tab (Documentation": "你应当查阅游戏内的企业文档（帮助文档",
     " Corporation). It's the most useful and up-to-date resource for managing Corporation.": "」中的「企业」一节）。那是管理企业最有用、最时新的资料。",
     "Getting Started with Corporation": "企业入门",
-    "To get started, visit the city hall in Sector-12 in order to create a corporation. This requires 150e9 of your own money, but this money will get put into your corporation's funds. If you're in BitNode 3, you also have the option to get seed money from the government in exchange for 500m shares. Your corporation can have many different divisions, each in a different industry. There are many different types of industries, each with different properties. To create your first division, click the \"Expand\" button at the top of the management UI. The agriculture industry is recommended for your first division.": "要起步，先去 Sector-12 的市政厅创建一家企业。这需要你自备 150e9，不过这笔钱会转入企业资金池。若身处 BitNode 3，也可选择出让 500m 股份、换取政府的种子资金。企业可以拥有许多分部，每个分部处于不同行业；行业种类繁多，特性各异。要创建第一个分部，点击管理界面顶部的「扩展」按钮。首个分部推荐农业行业。",
+    "To get started, visit the city hall in Sector-12 in order to create a corporation. This requires 150e9 of your own money, but this money will get put into your corporation's funds. If you're in BitNode 3, you also have the option to get seed money from the government in exchange for 500m shares. Your corporation can have many different divisions, each in a different industry. There are many different types of industries, each with different properties. To create your first division, click the \"Expand\" button at the top of the management UI. The agriculture industry is recommended for your first division.": "要起步，先去 Sector-12 的市政厅创建一家企业。这需要你自备 150e9，不过这笔钱会转入企业资金池。若身处 BitNode 3，也可选择出让 500m 股份、换取政府的种子资金。企业可以拥有许多部门，每个部门处于不同行业；行业种类繁多，特性各异。要创建第一个部门，点击管理界面顶部的「扩展」按钮。首个部门推荐农业行业。",
     "The first thing you'll need to do is hire some employees. Employees can be assigned to five different positions. Each position has a different effect on various aspects of your corporation. It is recommended to have at least one employee at each position.": "第一件事是雇些员工。员工可分配到五种岗位，每种岗位对企业各方面的影响不同。建议每个岗位至少安排一名员工。",
-    "Each industry uses some combination of materials in order to produce other materials and/or create products. Specific information about this is displayed in each of your divisions' UI.": "每个行业都以某种材料组合来生产其他材料和/或产品。具体信息会显示在各分部的界面里。",
-    "Products are special, industry-specific objects. They are different than materials because you must manually choose to develop them, and you can choose to develop any number of products. Developing a product takes time, but a product typically generates significantly more revenue than any material. Not all industries allow you to create products. To create a product, look for a button in the top-left panel of the division UI (e.g., for the software industry, the button says \"Develop Software\").": "产品是行业特有的特殊物件。它与材料不同：须由你主动选择研发，且研发数量不限。研发产品需要时间，但产品的收益通常远高于任何材料。并非所有行业都能创建产品。要创建产品，请在分部界面左上角的面板中找到相应按钮（例如软件行业，按钮上写着「开发软件」）。",
+    "Each industry uses some combination of materials in order to produce other materials and/or create products. Specific information about this is displayed in each of your divisions' UI.": "每个行业都以某种材料组合来生产其他材料和/或产品。具体信息会显示在各部门的界面里。",
+    "Products are special, industry-specific objects. They are different than materials because you must manually choose to develop them, and you can choose to develop any number of products. Developing a product takes time, but a product typically generates significantly more revenue than any material. Not all industries allow you to create products. To create a product, look for a button in the top-left panel of the division UI (e.g., for the software industry, the button says \"Develop Software\").": "产品是行业特有的特殊物件。它与材料不同：须由你主动选择研发，且研发数量不限。研发产品需要时间，但产品的收益通常远高于任何材料。并非所有行业都能创建产品。要创建产品，请在部门界面左上角的面板中找到相应按钮（例如软件行业，按钮上写着「开发软件」）。",
     "To get your supply chain system started, purchase the materials that your industry needs to produce other materials/products. This can be done by clicking the \"Buy\" button next to the corresponding material(s). After you have the required materials, you will immediately start production. The amount and quality/effective rating of materials/products you produce is based on a variety of factors, such as your employees and their productivity and the quality of materials used for production.": "要启动供应链，先购买本行业生产其他材料/产品所需的材料——点击对应材料旁的「购买」按钮即可。凑齐所需材料后，生产随即开始。你产出的材料/产品的数量及其质量/有效评级取决于多种因素，比如员工与其生产力、以及所用生产材料的质量。",
     "Once you start producing materials/products, you can sell them in order to start earning revenue. This can be done by clicking the \"Sell\" button next to the corresponding material or product. The amount of material/product you sell is dependent on a wide variety of different factors. In order to produce and sell a product, you'll have to fully develop it first.": "一旦开始产出材料/产品，出售它们就能赚取营收——点击对应材料或产品旁的「出售」按钮即可。可售出的材料/产品数量受众多不同因素影响。要产销某种产品，必须先将其完全研发出来。",
     "These are the basics of getting your corporation up and running! Now, you can start purchasing upgrades to improve your bottom line. If you need money, consider looking for seed investors, who will give you money in exchange for stock shares. Otherwise, once you feel you are ready, take your corporation public! Once your corporation goes public, you can no longer find investors. Instead, your corporation will be publicly traded, and its stock price will change based on how well it's performing financially. In order to make money for yourself, you can set dividends for a solid, reliable income, or you can sell your stock shares in order to make quick money.": "这些就是让企业转起来的基本盘！接下来你可以购买升级、增厚利润。缺钱的话，不妨寻找种子投资人——他们以资金换股份。或者，当你自觉准备就绪，就让企业上市！企业上市后便不能再找投资人，取而代之的是股票公开交易，股价随其财务表现起落。想为自己赚钱，可以设定分红换取稳固可靠的进账，也可以出售自持股份赚快钱。",
     "Tips/Pointers": "要点与建议",
-    "-Start with one division, such as Agriculture. Get it profitable on its own, then expand to a division that consumes/produces a material that the division you selected produces/consumes.": "-从一家分部做起，比如农业。先让它独立盈利，再扩张一个与现有分部在材料上互相供需的分部。",
+    "-Start with one division, such as Agriculture. Get it profitable on its own, then expand to a division that consumes/produces a material that the division you selected produces/consumes.": "-从一家部门做起，比如农业。先让它独立盈利，再扩张一个与现有部门在材料上互相供需的部门。",
     "-Materials are profitable, but products are where the real money is, although if the product has a low development budget or is produced with low-quality materials, it won't sell well.": "-材料有利可图，但真正的大钱在产品——只不过研发预算过低、或用料质量不高的产品会卖不动。",
     "-The \"Smart Supply\" upgrade is extremely useful. Consider purchasing it as soon as possible.": "-「智能调拨（Smart Supply）」升级极其好用，建议尽快购买。",
     "-Purchasing Hardware, Robots, AI Cores, and Real Estate can potentially increase your production. The effects of these depend on what industry you are in.": "-购买 Hardware（硬件）、Robots（机器人）、AI Cores（AI 核心）与 Real Estate（房地产）可能提升你的产量。具体效果因行业而异。",
@@ -358,7 +357,6 @@
   /* 文学中被专名插值拆开的片段（原样匹配，含首尾空格） */
   BitburnerZH.frag({
     ", and": "，以及",
-    " and ": "、",
     " or the ": "或",
     "THE ": "要知道，",
     "ILLUMINATI": "光照会",

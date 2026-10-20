@@ -80,7 +80,7 @@
   };
   // 注：PRE 不整体跳过。文档代码块是 <pre><code>，由 CODE 拦截；
   // PromptManager 确认框是纯 <pre>，需要翻译。含换行节点会逐行匹配。
-  var BASE_SKIP = ".monaco-editor, .monaco-editor *, [contenteditable], .xterm, .xterm *";
+  var BASE_SKIP = ".monaco-editor, .monaco-editor *, [contenteditable]";
 
   function inSkipZone(node) {
     var el = node.nodeType === 1 ? node : node.parentElement;
@@ -96,13 +96,14 @@
   }
 
   /* ---------------- 查找翻译 ---------------- */
+  // 返回 { v: 译文, kind: "frag"|"exact"|"pattern" } 或 null
   function findTranslation(raw) {
     if (!raw) return null;
     // 必须包含拉丁字母才值得翻译
     if (!/[A-Za-z]/.test(raw)) return null;
 
     var v = RAW.get(raw);
-    if (v !== undefined) return v;
+    if (v !== undefined) return { v: v, kind: "frag" };
 
     var lead = raw.match(/^\s+/);
     var trail = raw.match(/\s+$/);
@@ -111,7 +112,7 @@
 
     v = EXACT.get(key);
     if (v !== undefined) {
-      return (lead ? lead[0] : "") + v + (trail ? trail[0] : "");
+      return { v: (lead ? lead[0] : "") + v + (trail ? trail[0] : ""), kind: "exact" };
     }
 
     for (var i = 0; i < PATTERNS.length; i++) {
@@ -119,10 +120,21 @@
       re.lastIndex = 0;
       if (re.test(key)) {
         var out = key.replace(re, PATTERNS[i][1]);
-        if (out !== key) return (lead ? lead[0] : "") + out + (trail ? trail[0] : "");
+        if (out !== key) return { v: (lead ? lead[0] : "") + out + (trail ? trail[0] : ""), kind: "pattern" };
       }
     }
     return null;
+  }
+
+  // 单行处理策略：
+  //  - exact/frag 命中：直接采用人工校订的译文，不再走名称通道（防二次改写，如「终末者（终末者）」）
+  //  - pattern 命中：对输出走名称通道（把捕获组插入的英文专名本地化）
+  //  - 未命中：对原文走名称通道（句中内嵌专名替换）
+  function applyOne(text) {
+    var t = findTranslation(text);
+    if (t === null) return replaceNames(text);
+    if (t.kind === "pattern") return replaceNames(t.v);
+    return t.v;
   }
 
   /* ---------------- 名称内嵌替换 ---------------- */
@@ -159,18 +171,16 @@
 
       var out;
       if (cur.indexOf("\n") !== -1) {
-        // 多行节点（单条 print 含换行 / pre 确认框）：逐行翻译+名称替换后重组
+        // 多行节点（单条 print 含换行 / pre 确认框）：逐行翻译后重组
         var lines = cur.split("\n");
         var changed = false;
         for (var li = 0; li < lines.length; li++) {
-          var lt = findTranslation(lines[li]);
-          var namedLine = replaceNames(lt !== null ? lt : lines[li]);
-          if (namedLine !== lines[li]) { lines[li] = namedLine; changed = true; }
+          var ln = applyOne(lines[li]);
+          if (ln !== lines[li]) { lines[li] = ln; changed = true; }
         }
         out = changed ? lines.join("\n") : null;
       } else {
-        var t1 = findTranslation(cur);
-        out = replaceNames(t1 !== null ? t1 : cur);
+        out = applyOne(cur);
         if (out === cur) out = null;
       }
 
@@ -188,12 +198,12 @@
   var ATTRS = ["title", "placeholder", "aria-label", "aria-description"];
   function handleAttrs(el) {
     try {
+      if (inSkipZone(el)) return;
       for (var i = 0; i < ATTRS.length; i++) {
         var a = ATTRS[i];
         if (!el.hasAttribute || !el.hasAttribute(a)) continue;
         var cur = el.getAttribute(a);
-        var t = findTranslation(cur);
-        var named = replaceNames(t !== null ? t : cur);
+        var named = applyOne(cur);
         if (named !== cur) el.setAttribute(a, named);
       }
     } catch (e) { /* ignore */ }
@@ -245,8 +255,9 @@
       for (var i = 0; i < muts.length; i++) {
         var m = muts[i];
         if (m.type === "characterData") {
-          // 文本被 React 改写：清除幂等标记重新评估
+          // 若是引擎自己写回的译文，跳过（防二次翻译）；只有 React 改写才重新评估
           var tn = m.target;
+          if (lastOut.get(tn) === tn.nodeValue) continue;
           done.delete(tn);
           schedule(tn);
         } else if (m.type === "attributes") {
