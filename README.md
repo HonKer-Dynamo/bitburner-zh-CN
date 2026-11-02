@@ -1,14 +1,17 @@
-# Bitburner 汉化补丁（Steam 版）
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/557ff055-bbb2-4d83-84a7-f7d8cccc2554" /># Bitburner 汉化补丁（Steam 版）
 
 让 Steam 版 Bitburner 显示简体中文。游戏界面、终端命令说明、帮助文档、教程、成就全部翻译，约一万条。
 
-![终端帮助](https://github.com/s567901/bitburner-zh-CN/releases/download/v1.2/screenshot-1.jpg)
+**终端帮助**
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0cf03e1d-9292-4410-8689-196d35ad3dc8" />
 
-![游戏内帮助文档](https://github.com/s567901/bitburner-zh-CN/releases/download/v1.2/screenshot-3.jpg)
+**游戏内帮助文档**
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0c2fe3e4-b20d-461a-8640-5c1870271f08" />
+
 
 ## 怎么装
 
-1. 到 [Releases](https://github.com/s567901/bitburner-zh-CN/releases/latest) 下载 `Bitburner-zh-CN-3.0.1.zip`
+1. 到 **[Releases](https://github.com/HonKer-Dynamo/bitburner-zh-CN/releases)** 下载 `Bitburner-zh-CN-3.0.1.zip`
 2. 完全退出 Bitburner
 3. 解压，把里面的 `resources` 文件夹拖进游戏目录（`bitburner.exe` 所在的那个文件夹），提示覆盖就点"是"
 4. 打开游戏，就是中文了
