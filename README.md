@@ -2,14 +2,14 @@
 
 让 Steam 版 Bitburner 显示简体中文。游戏界面、终端命令说明、帮助文档、教程、成就全部翻译，约一万条。
 
-**终端帮助**
+**终端帮助汉化截图**
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0cf03e1d-9292-4410-8689-196d35ad3dc8" />
 
-**游戏内帮助文档**
+**游戏内帮助文档汉化截图**
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0c2fe3e4-b20d-461a-8640-5c1870271f08" />
 
 
-## 怎么装
+## 如何安装？
 
 1. 到 **[Releases](https://github.com/HonKer-Dynamo/bitburner-zh-CN/releases)** 下载 `Bitburner-zh-CN-3.0.1.zip`
 2. 完全退出 Bitburner
@@ -20,7 +20,7 @@
 
 **只支持 3.0.1 版**。不确定版本的话：游戏目录 → `resources\app\package.json`，用记事本打开看 `"version"` 是不是 `3.0.1`。
 
-## 怎么卸载
+## 如何卸载？
 
 Steam 库里右键 Bitburner → 属性 → 已安装文件 → **验证游戏文件完整性**，游戏自动还原成英文。
 
