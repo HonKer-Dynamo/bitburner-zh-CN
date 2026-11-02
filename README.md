@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/557ff055-bbb2-4d83-84a7-f7d8cccc2554" /># Bitburner 汉化补丁（Steam 版）
+# Bitburner 汉化补丁（Steam 版）
 
 让 Steam 版 Bitburner 显示简体中文。游戏界面、终端命令说明、帮助文档、教程、成就全部翻译，约一万条。
 
